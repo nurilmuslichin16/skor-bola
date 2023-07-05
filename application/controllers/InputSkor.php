@@ -247,7 +247,7 @@ class InputSkor extends CI_Controller
 			[
 				'status' 	=> TRUE,
 				'message' 	=> $message,
-				'result'	=> $success . ' Sukses, ' . $error . ' Gagal, ' . $double .  ' Sudah Tersedia'
+				'result'	=> '<b style="color: green;">' . $success . ' Sukses</b>, <b style="color: red;">' . $error . ' Gagal</b>, <b style="color: orange;">' . $double .  ' Sudah Tersedia</b><br/><br/>'
 			]
 		);
 	}

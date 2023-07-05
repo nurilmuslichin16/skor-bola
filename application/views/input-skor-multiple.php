@@ -180,7 +180,8 @@
             dataType: "JSON",
             success: function(data) {
                 if (data.status) {
-                    let html_message = data.message.join("<br/>");
+                    let html_message = data.result;
+                    html_message += data.message.join("<br/>");
 
                     Swal.fire({
                         title: 'Sukses!',

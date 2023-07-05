@@ -34,12 +34,12 @@ CREATE TABLE IF NOT EXISTS `tb_klub` (
   PRIMARY KEY (`id_klub`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table skor_bola.tb_klub: ~0 rows (approximately)
+-- Dumping data for table skor_bola.tb_klub: ~4 rows (approximately)
 INSERT INTO `tb_klub` (`id_klub`, `nama_klub`, `kota_klub`, `ma`, `me`, `s`, `k`, `gm`, `gk`, `point`) VALUES
-	(1, 'Persib', 'Bandung', 3, 2, 1, 0, 7, 3, 7),
+	(1, 'Persib', 'Bandung', 4, 2, 2, 0, 8, 4, 8),
 	(2, 'Arema', 'Malang', 2, 1, 0, 1, 4, 5, 3),
-	(3, 'Persija', 'Jakarta', 1, 0, 1, 0, 2, 2, 1),
-	(5, 'Persip', 'Pekalongan', 2, 0, 0, 2, 3, 6, 0);
+	(3, 'Persija', 'Jakarta', 2, 1, 1, 0, 4, 3, 4),
+	(5, 'Persip', 'Pekalongan', 4, 0, 1, 3, 5, 9, 1);
 
 -- Dumping structure for table skor_bola.tb_match
 CREATE TABLE IF NOT EXISTS `tb_match` (
@@ -51,12 +51,14 @@ CREATE TABLE IF NOT EXISTS `tb_match` (
   PRIMARY KEY (`id_match`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table skor_bola.tb_match: ~0 rows (approximately)
+-- Dumping data for table skor_bola.tb_match: ~6 rows (approximately)
 INSERT INTO `tb_match` (`id_match`, `klub_home`, `score_home`, `klub_away`, `score_away`) VALUES
 	(1, 'Persib', 3, 'Arema', 0),
 	(2, 'Persib', 2, 'Persija', 2),
 	(3, 'Arema', 4, 'Persip', 2),
-	(4, 'Persib', 2, 'Persip', 1);
+	(4, 'Persib', 2, 'Persip', 1),
+	(5, 'Persip', 1, 'Persib', 1),
+	(6, 'Persija', 2, 'Persip', 1);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
